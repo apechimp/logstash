@@ -2,6 +2,14 @@
 require "logstash/inputs/base"
 require "logstash/namespace"
 
+module Heroku
+  module Helpers
+    def error(message)
+      puts message
+    end #def error
+  end # module Helpers 
+end # module Heroku
+
 # Stream events from a heroku app's logs.
 #
 # This will read events in a manner similar to how the `heroku logs -t` command
