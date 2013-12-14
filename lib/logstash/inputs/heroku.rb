@@ -5,7 +5,7 @@ require "logstash/namespace"
 module Heroku
   module Helpers
     def error(message)
-      puts message
+      @logger.error(message)
     end #def error
   end # module Helpers 
 end # module Heroku
